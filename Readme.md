@@ -10,5 +10,5 @@ This project will try to automate all the prerequisites and the "boring stuff" l
 # Can I use this project for my needs?
 Yeah sure, You can use this project to automate all those boring stuff I mentioned earlier. Feel free to tweak the scripts to your own needs, however giving this project a shoutout or some credit to my work won't hurt anyone, I GUESS???
 # What the scripts do?
-- ``./install_docker.sh`` -> this will install docker and add user pi to the docker group.
+- ``./install_docker.sh`` -> this will install docker and add user pi to the docker group.[Logout/Reload Required]
 - ``./install_portainer.sh`` -> this will install portainer inside a docker container.
