@@ -19,14 +19,9 @@ If You choose the Blue-Pill 🔵, run the command below, it will do everything[s
 ```
 sudo curl https://raw.githubusercontent.com/Ninja-Yubaraj/docker-server/main/Wonderland/Blue-Pill.sh | sudo sh
 ```
-Or You can choose the [Red-Pill] 🔴, then You stay in [Wonderland](https://github.com/Ninja-Yubaraj/docker-server/tree/main/Wonderland), and I show you how deep the rabbit hole goes.
+Or You can choose the [Red-Pill](https://github.com/Ninja-Yubaraj/docker-server/tree/main/Wonderland/Red-Pill.md) 🔴, then You stay in [Wonderland](https://github.com/Ninja-Yubaraj/docker-server/tree/main/Wonderland), and I show you how deep the rabbit hole goes.
 
 Remember, all I am offering is the [truth](https://www.youtube.com/watch?v=zE7PKRjrid4), nothing more.
-# What the scripts do?
-- ``./install_docker.sh`` -> this will install docker and add user pi to the docker group.[Logout/Reload Required]
-- ``./install_portainer.sh`` -> this will install portainer inside a docker container.
-- ``./install_homer.sh`` -> this will install homer inside a docker container.
-- ``./update_portainer.sh`` -> this will update portainer and reinstall it.
 
 ## Contributors
 See the list of [contributors](https://github.com/Ninja-Yubaraj/docker-server/graphs/contributors) who participated in this project.
