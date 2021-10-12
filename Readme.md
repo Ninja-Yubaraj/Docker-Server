@@ -9,6 +9,17 @@ This project will try to automate all the prerequisites and the "boring stuff" l
 
 # Can I use this project for my needs?
 Yeah sure, You can use this project to automate all those boring stuff I mentioned earlier. Feel free to tweak the scripts to your own needs, however giving this project a shoutout or some credit to my work won't hurt anyone.
+
+# Installation
+Let's play a game, shall we? It's called the Red-Pill 🔴 or Blue-Pill 🔵.
+
+![](Wonderland/assets/images/morpheus.png)
+
+If you choose the Blue-Pill 🔵, run the command below, it will do everything and you never know "how deep the [rabit-hole](https://www.youtube.com/watch?v=zE7PKRjrid4) goes". But you will never know what it will do with the sudo, so be careful.
+```
+sudo curl https://raw.githubusercontent.com/Ninja-Yubaraj/docker-server/main/Wonderland/Blue-Pill.sh | sudo sh
+```
+Or you can choose the Red-Pill 🔴,click [this] link and know what youre doing.
 # What the scripts do?
 - ``./install_docker.sh`` -> this will install docker and add user pi to the docker group.[Logout/Reload Required]
 - ``./install_portainer.sh`` -> this will install portainer inside a docker container.
