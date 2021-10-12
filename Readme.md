@@ -15,12 +15,13 @@ Let's play a game, shall we? It's called the Red-Pill 🔴 or Blue-Pill 🔵.
 
 ![](Wonderland/assets/images/morpheus.png)
 
-If You choose the Blue-Pill 🔵, run the command below, the story ends and You'll be good to go. But You will never know what it will do with the sudo, so be careful.
+If You choose the Blue-Pill 🔵, run the command below, it will do everything[still you've to install modules by yourself] and the story ends. But You will never know what it will do with the sudo, so be careful.
 ```
 sudo curl https://raw.githubusercontent.com/Ninja-Yubaraj/docker-server/main/Wonderland/Blue-Pill.sh | sudo sh
 ```
 Or You can choose the [Red-Pill] 🔴, then You stay in [Wonderland](https://github.com/Ninja-Yubaraj/docker-server/tree/main/Wonderland), and I show you how deep the rabbit hole goes.
 
+Remember, all I am offering is the [truth](https://www.youtube.com/watch?v=zE7PKRjrid4), nothing more.
 # What the scripts do?
 - ``./install_docker.sh`` -> this will install docker and add user pi to the docker group.[Logout/Reload Required]
 - ``./install_portainer.sh`` -> this will install portainer inside a docker container.
