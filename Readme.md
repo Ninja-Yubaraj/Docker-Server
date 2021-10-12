@@ -14,3 +14,6 @@ Yeah sure, You can use this project to automate all those boring stuff I mention
 - ``./install_portainer.sh`` -> this will install portainer inside a docker container.
 - ``./install_homer.sh`` -> this will install homer inside a docker container.
 - ``./update_portainer.sh`` -> this will update portainer and reinstall it.
+
+## Contributors
+See the list of [contributors](https://github.com/Ninja-Yubaraj/docker-server/graphs/contributors) who participated in this project.
