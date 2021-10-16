@@ -17,7 +17,7 @@ Let's play a game, shall we? It's called the Red-Pill 🔴 or Blue-Pill 🔵.
 
 If You choose the Blue-Pill 🔵, run the command below, it will do everything[still you've to install modules by yourself] and the story ends. But You will never know what it will do with the sudo, so be careful.
 ```
-sudo curl https://raw.githubusercontent.com/Ninja-Yubaraj/Docker-Server/main/Wonderland/Blue-Pill.sh | sudo sh
+sudo curl https://raw.githubusercontent.com/Ninja-Yubaraj/Docker-Server/main/Wonderland/Blue-Pill.sh | sudo bash
 ```
 Or You can choose the [Red-Pill](Wonderland/Red-Pill.md) 🔴, then You stay in [Wonderland](Wonderland), and I show you how deep the rabbit hole goes.
 
