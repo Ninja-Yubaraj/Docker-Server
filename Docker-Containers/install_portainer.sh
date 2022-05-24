@@ -5,18 +5,6 @@ function error {
   exit 1
 }
 
-function check_internet() {
-  printf "Checking if you are online..."
-  wget -q --spider http://github.com
-  if [ $? -eq 0 ]; then
-    echo "Online. Continuing."
-  else
-    error "Offline. Go connect to the internet then run the script again."
-  fi
-}
-
-check_internet
-
 mkdir -p /home/docker/data/portainer || error "Could not create portainer directory"
 cd /home/docker/data/portainer || error "Could not change to portainer directory"
 sudo docker pull portainer/portainer-ce:latest || error "Failed to pull latest Portainer docker image!"

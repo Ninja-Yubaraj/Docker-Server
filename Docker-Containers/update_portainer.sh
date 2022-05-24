@@ -5,18 +5,6 @@ function error {
   exit 1
 }
 
-function check_internet() {
-  printf "Checking if you are online..."
-  wget -q --spider http://github.com
-  if [ $? -eq 0 ]; then
-    echo "Online. Continuing."
-  else
-    error "Offline. Go connect to the internet then run the script again."
-  fi
-}
-
-check_internet
-
 portainer_pid=`docker ps | grep portainer-ce | awk '{print $1}'` || error "Portainer not running. Please start Portainer first."
 portainer_name=`docker ps | grep portainer-ce | awk '{print $2}'` || error "Portainer not running. Please start Portainer first."
 
