@@ -5,7 +5,7 @@ function error {
   exit 1
 }
 
-mkdir -p /home/docker/data/portainer || error "Could not create portainer directory"
+sudo mkdir -p /home/docker/data/portainer || error "Could not create portainer directory"
 cd /home/docker/data/portainer || error "Could not change to portainer directory"
 sudo docker pull portainer/portainer-ce:latest || error "Failed to pull latest Portainer docker image!"
 sudo docker volume create portainer_data || error "Failed to create portainer data volume"
