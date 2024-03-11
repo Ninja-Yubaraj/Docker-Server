@@ -1,5 +1,4 @@
 ---
-version: "2.1"
 services:
   wireguard:
     image: lscr.io/linuxserver/wireguard:latest
@@ -15,7 +14,10 @@ services:
       - SERVERPORT=51820
       - PEERS=yubi
       - PEERDNS=auto
+      - INTERNAL_SUBNET=10.13.13.0
       - ALLOWEDIPS=0.0.0.0/0
+      - PERSISTENTKEEPALIVE_PEERS=
+      - LOG_CONFS=true
     volumes:
       - /opt/wireguard/config:/config
       - /lib/modules:/lib/modules
