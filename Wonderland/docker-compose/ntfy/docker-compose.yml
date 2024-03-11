@@ -13,7 +13,7 @@ services:
     # user: UID:GID
     volumes:
       - /var/cache/ntfy:/var/cache/ntfy
-      - /etc/ntfy:/etc/ntfy
+      - /opt/ntfy/etc:/etc/ntfy
     ports:
       - 9090:80
     healthcheck: # optional: remember to adapt the host:port to your environment
