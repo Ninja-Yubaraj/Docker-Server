@@ -12,7 +12,7 @@ services:
       - TZ=Asia/Kolkata
     # user: UID:GID
     volumes:
-      - /var/cache/ntfy:/var/cache/ntfy
+      - /opt/ntfy/cache:/var/cache/ntfy
       - /opt/ntfy/etc:/etc/ntfy
     ports:
       - 9090:80
