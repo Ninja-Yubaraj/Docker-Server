@@ -5,24 +5,27 @@ services:
     container_name: wireguard
     cap_add:
       - NET_ADMIN
-      - SYS_MODULE
+      - SYS_MODULE #optional
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Kolkata
-      - SERVERURL=auto
-      - SERVERPORT=51820
-      - PEERS=yubi
-      - PEERDNS=auto
-      - INTERNAL_SUBNET=10.13.13.0
-      - ALLOWEDIPS=0.0.0.0/0
-      - PERSISTENTKEEPALIVE_PEERS=
-      - LOG_CONFS=true
+      - SERVERURL=auto #optional
+      - SERVERPORT=51820 #optional
+      - PEERS=yubi #optional
+      - PEERDNS=auto #optional
+      - INTERNAL_SUBNET=10.13.13.0 #optional
+      - ALLOWEDIPS=0.0.0.0/0 #optional
+      - PERSISTENTKEEPALIVE_PEERS= #optional
+      - LOG_CONFS=true #optional
     volumes:
-      - /opt/wireguard/config:/config
-      - /lib/modules:/lib/modules
+      - wireguard_config:/config
+      - /lib/modules:/lib/modules #optional
     ports:
       - 51820:51820/udp
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
     restart: unless-stopped
+
+volumes:
+  wireguard_config:
